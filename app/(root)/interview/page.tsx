@@ -7,7 +7,7 @@ const Page =async () => {
     console.log('user: ', user)
   return (
     <>
-        <h3>Interview Generation</h3>
+        <h3>Generación de entrevistas</h3>
         <Agent userName={user!.name} userId={user?.id} type='generate'/>
     </>
 )
