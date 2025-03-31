@@ -25,7 +25,7 @@ const InterviewCard = async ({ id,
                     </div>
                     <Image src={getRandomInterviewCover()} alt='cover' width={90} height={90} className='rounded-full object-fit size-[90px]' />
                     <h3 className="mt-5 capitalize">
-                        {role} Interview
+                        {role} Entrevista
                     </h3>
                     <div className="flex flex-row gap-5 mt-3">
                         <div className="flex flex-row gap-2">
@@ -38,7 +38,7 @@ const InterviewCard = async ({ id,
                         </div>
                     </div>
                     <p className="line-clamp-2 mt-5">
-                        {feedback?.finalAssessment || "You haven't  taken the interview yet. Take it now to improve your skills."}
+                        {feedback?.finalAssessment || "Aún no has tomado la entrevista. Tómala ahora para mejorar tus habilidades."}
                     </p>
                 </div>
                 <div className="flex flex-row justify-between">
@@ -48,7 +48,7 @@ const InterviewCard = async ({ id,
                             ? `/interview/${id}/feedback`
                             : `/interview/${id}`
                         }>
-                            {feedback ? 'Check Feedback' : 'View Interview'}
+                            {feedback ? 'Verificar comentarios' : 'Ver Entrevista'}
                         </Link>
                     </Button>
                 </div>
