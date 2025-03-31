@@ -153,7 +153,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
                         <Image src={'/ai-avatar.png'} alt='vapi' width={65} height={54} className='object-cover' />
                         {isSpeaking && <span className='animate-speak' />}
                     </div>
-                    <h3>AI Interviewer</h3>
+                    <h3>AI Entrevistador</h3>
                 </div>
                 <div className="card-border">
                     <div className="card-content">
@@ -182,7 +182,7 @@ const Agent = ({ userName, userId, type, interviewId, questions }: AgentProps) =
                     </button>
                 ) : (
                     <button className='btn-disconnect' onClick={handleDisconnect}>
-                        End
+                        Colgar
                     </button>
                 )}
             </div>

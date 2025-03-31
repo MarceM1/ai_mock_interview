@@ -107,7 +107,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
 						height={38} />
 					<h2 className="text-primary-100">PrepWise</h2>
 				</div>
-				<h3>Practice job interview with AI</h3>
+				<h3>Practica entrevistas de trabajo con IA</h3>
 
 				<Form {...form}>
 					<form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6 mt-4 form">

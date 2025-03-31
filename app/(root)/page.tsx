@@ -23,37 +23,37 @@ const Home = async () => {
     <>
       <section className="card-cta">
         <div className="flex flex-col gap-6 max-w-lg">
-          <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
-          <p className="text-lg">Practice on real interview questions & get instant feedback</p>
+          <h2>Prepárate para entrevistas con práctica y retroalimentación impulsadas por IA</h2>
+          <p className="text-lg">Practica con preguntas reales de entrevistas y recibe retroalimentación instantánea</p>
           <Button asChild className='btn-primary max-sm:w-full'>
-            <Link href={'/interview'}>Start an Interview</Link>
+            <Link href={'/interview'}>Iniciar una entrevista</Link>
           </Button>
         </div>
         <Image src={'/robot.png'} alt='robot' width={400} height={400} className='max-sm:hidden' />
       </section>
       <section className="flex flex-col gap-6 mt-8">
-        <h2>Your Interviews</h2>
+        <h2>Tus Entrevistas</h2>
         <div className="interviews-section">
           {
             hasPastInterviews ? (
               userInterviews?.map((interview) => (
                 <InterviewCard key={interview.id} {...interview} />
               ))) : (
-              <p>You haven&apos;t taken any interviews yet</p>
+              <p>Aún no has realizado ninguna entrevista</p>
             )
           }
 
         </div>
       </section>
       <section className="flex flex-col gap-6 mt-8">
-        <h2>Take an Interview</h2>
+        <h2>Toma una entrevista</h2>
         <div className="interviews-section">
           {
             hasUpcomingInterviews ? (
               latestInterviews?.map((interview) => (
                 <InterviewCard key={interview.id} {...interview} />
               ))) : (
-              <p>There are no interviews available</p>
+              <p>No hay entrevistas disponibles</p>
             )
           }
         </div>
