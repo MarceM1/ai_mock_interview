@@ -103,12 +103,12 @@ export const interviewer: CreateAssistantDTO = {
     "¡Hola! Gracias por tomarte el tiempo para hablar conmigo hoy. Estoy emocionado de aprender más sobre ti y tu experiencia.",
   transcriber: {
     provider: "deepgram",
-    model: "nova-2",
-    language: "es-LATAM",
+    model: "nova-2-general",
+    language: "es",
   },
   voice: {
     provider: "11labs",
-    voiceId: "marissa",
+    voiceId: "matilda",
     stability: 0.4,
     similarityBoost: 0.8,
     speed: 0.9,
