@@ -14,18 +14,19 @@ export async function POST(request: Request) {
   try {
     const { text: questions } = await generateText({
       model: google("gemini-2.0-flash-001"),
-      prompt: `Prepare questions for a job interview.
-        The job role is ${role}.
-        The job experience level is ${level}.
-        The tech stack used in the job is: ${techstack}.
-        The focus between behavioural and technical questions should lean towards: ${type}.
-        The amount of questions required is: ${amount}.
-        Please return only the questions, without any additional text.
-        The questions are going to be read by a voice assistant so do not use "/" or "*" or any other special characters which might break the voice assistant.
-        Return the questions formatted like this:
-        ["Question 1", "Question 2", "Question 3"]
+      prompt: `Prepara preguntas para una entrevista laboral.
+        El puesto de trabajo es ${role}.
+        El nivel de experiencia requerido para el puesto es ${level}.
+        El stack tecnológico utilizado en el puesto es: ${techstack}.
+        El enfoque entre preguntas de comportamiento y técnicas debe inclinarse hacia: ${type}.
+        La cantidad de preguntas requeridas es: ${amount}.
+        Por favor, devuelve solo las preguntas, sin texto adicional.
+        Las preguntas serán leídas por un asistente de voz, así que no uses "/" ni "*" ni ningún otro carácter especial que pueda interferir con el asistente de voz.
+        Devuelve las preguntas formateadas de la siguiente manera:
+        ["Pregunta 1", "Pregunta 2", "Pregunta 3"]
         
-        Thank you! <3
+
+        ¡Gracias! <3
     `,
     });
 
